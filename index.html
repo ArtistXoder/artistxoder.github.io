@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>ArtistXoder Website</title>
+<style>
+      body {
+         background-color: rgb(0,0,0);
+      }
+      
+  /* Scope the Hype animation container */
+@element '[id*=_hype_container]' {
+  $this {
+    /* Expand to fill available width */
+    width: 100% !important;
+    /* But never grow taller or wider than the viewport allows */
+    max-width: eval("innerHeight * (style.width.split('px')[0]/style.height.split('px')[0])")px;
+    /* Calculate height based on current width and width & height attributes */
+    height: eval("offsetWidth / (style.width.split('px')[0]/style.height.split('px')[0])")px !important;
+  }
+  $this .HYPE_scene {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform:
+      translateX(-50%)
+      translateY(-50%)
+      /* Calculate Scale value based on width of container */
+      /* If our document was 500px wide */
+      /* an offsetWidth of 1000px gives scale(2) */
+      /* and an offsetWidth of 250px gives scale(.5) */
+      scale(eval("offsetWidth / style.width.split('px')[0]"))
+    ;
+  }
+}
+.h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+.h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+   </style>
+<link rel="shortcut icon" type="image/png" href="Pictures\favicon.png.ico">
+<script src="https://kit.fontawesome.com/087be508f6.js" crossorigin="anonymous"></script>
+ </head>
+    <body>
+ <center>
+ <h1 style="color:white"> Hi, my name is ArtistXoder.<h1/>
+ <h3 style="color:white">My real name is Garrett I am from the USA.</h3>
+ <h1 style="color:white">About Me.</h1>
+ <h3 style="color:white">I am programmer that love coding in bash scripts
+An, some web developement.</h3>
+ <img src="Pictures\20211002_150401.jpg" style="width:80px">
+ <h1 style="color:white">Favoite Quote.</h1>
+ 
+ <h3 style="color:white">“We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win.”
+     
+― John F. Kennedy</h3>
+     
+<h3 style="color:white">Made with Brackets IDE. An social icons from Font Awesome. Hosted on Github Pages.<h3/> 
+    <h3 style="color:white">Made in the US.</h3>
+<a href="https://www.instagram.com/artistxoder"><i style="color:white" class="fa-brands fa-instagram fa-3x"></i><a/>
+<a href="https://www.twitch.com/artistxoder"><i style="color:white" class="fa-brands fa-twitch fa-3x"></i><a/>
+<a href="www.github.com/artistxoder"><i style="color:white" class="fa-brands fa-github fa-3x"></i></a>
+<a href="mailto:g.goben@outlook.com"><i style="color:white" class="fa-regular fa-inbox fa-3x"></i><a/>
+</center>
+  </body>
+  </html>

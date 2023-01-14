@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>404</title>
+<style>
+ body {
+       background: linear-gradient(#ff48c4,#2bd1fc, #f3ea5f,#c04df9,#ff3f3f);
+      }
+      
+  /* Scope the Hype animation container */
+@element '[id*=_hype_container]' {
+  $this {
+    /* Expand to fill available width */
+    width: 100% !important;
+    /* But never grow taller or wider than the viewport allows */
+    max-width: eval("innerHeight * (style.width.split('px')[0]/style.height.split('px')[0])")px;
+    /* Calculate height based on current width and width & height attributes */
+    height: eval("offsetWidth / (style.width.split('px')[0]/style.height.split('px')[0])")px !important;
+  }
+  $this .HYPE_scene {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform:
+      translateX(-50%)
+      translateY(-50%)
+      /* Calculate Scale value based on width of container */
+      /* If our document was 500px wide */
+      /* an offsetWidth of 1000px gives scale(2) */
+      /* and an offsetWidth of 250px gives scale(.5) */
+      scale(eval("offsetWidth / style.width.split('px')[0]"))
+    ;
+  }
+}
+.h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+.h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+   </style>
+<link rel="shortcut icon" type="image/png" href="Pictures\favicon.png.ico">
+<script src="https://kit.fontawesome.com/087be508f6.js" crossorigin="anonymous"></script>
+ </head>
+    <body>
+ <center>
+<body style="background-color:black;">
+    <section class="notFound">
+        <div class="img">
+        <img src="https://assets.codepen.io/5647096/backToTheHomepage.png" alt="Back to the Homepage"/>
+        <img src="https://assets.codepen.io/5647096/Delorean.png" alt="El Delorean, El Doc y Marti McFly"/>
+        </div>
+        <div class="text">
+        <h1 style="color:white">404</h1>
+        <h2 style="color:white">PAGE NOT FOUND</h2>
+        <h3 style="color:white">BACK TO HOME?</h3>
+        <a href="index.html" class="yes">YES</a>
+        <a href="https://www.youtube.com/watch?v=G3AfIvJBcGo">NO</a>
+        </div>
+    </section>
+</body>
